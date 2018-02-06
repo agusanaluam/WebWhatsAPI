@@ -23,9 +23,11 @@ while True:
             #print message.content
             if isinstance(message, Message): # Currently works for text messages only.
                 file =open("chatlog.txt", "w")
-                file.write(message.sender)
+                #file.write(message.sender)
+                print count(message.sender)
+                print count(message.content)
                 print message.sender
-				print message.safe_name
+				#print message.safe_name
                 print message.content
                 #contact.chat.send_message("Sorry this account is under maintenance, please wait, i'll be back")
                 file.close()
