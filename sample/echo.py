@@ -25,6 +25,7 @@ while True:
                 file =open("chatlog.txt", "w")
                 file.write(message.sender)
                 print message.sender
+				print message.safe_name
                 print message.content
                 #contact.chat.send_message("Sorry this account is under maintenance, please wait, i'll be back")
                 file.close()
